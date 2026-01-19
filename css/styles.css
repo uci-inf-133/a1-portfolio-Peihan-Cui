@@ -1,13 +1,13 @@
-/* Enable Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 60px /* For the section header to show when navigating */
 }
 
 body {
   border: 10px solid #f8edeb; 
-  background-image: url(floral_background.avif);
+  background-image: url(../images/floral_background.avif);
   margin: 0;
-  color: #6d6875
+  color: #6d6875;
 }
 
 .title {
@@ -18,100 +18,62 @@ body {
 }
 
 /* Sticky Top Navigation */
-.top-nav {
+.navbar {
   position: sticky;
   top: 0;
   background-color: #f8edeb;
   padding: 1rem;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   gap: 2.5rem;
   align-items: center;
-  z-index: 1000; /* Ensure it stays above content */
+  z-index: 1000; 
 }
 
-.top-nav a {
+.navbar a {
   color: #6d6875;
   text-decoration: none;
-}
-
-.top-nav .logo {
-  display: flex;
-  margin-right: auto;
-  font-size: 1.4rem;
-  color: #6d6875;
-  gap: 1rem;
-}
-
-.menu-btn {
-  font-size: 1rem;
-  color: #6d6875;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.menu-btn:hover, .top-nav a:hover {
-  transform: scale(1.15);
-  opacity: 0.75;
-}
-
-/* Add padding to sections so the sticky nav doesn't cover content */
-section {
-  height: 100vh; /* Make each section fill the screen like a component */
-  padding: 80px 20px; 
-  scroll-margin-top: 3rem;
 }
 
 #about {
   background-color: #fae1dd;
   padding: 1rem;
-  margin: 2rem;
   border-radius: 1rem;
+  max-width: 90%;
+}
+
+.headshot-img {
+  border: 5px solid #d8e2dc;
+  border-radius: 20px;
+  width: 200px
 }
 
 #experiences {
   background-color: #ffe5d9;
   padding: 1rem;
-  margin: 2rem;
   border-radius: 1rem;
+  max-width: 90%;
+
 }
 
 #projects {
   background-color: #fae1dd;
   padding: 1rem;
-  margin: 2rem;
   border-radius: 1rem;
+  max-width: 90%;
 }
 
 #skills {
   background-color: #fcd5ce;
   padding: 1rem;
-  margin: 2rem;
   border-radius: 1rem;
+  max-width: 90%;
 }
 
 /* Mobile */
 
 @media (max-width: 768px) {
-  .menu-btn {
-    display: block;
-  }
-
-  .top-nav {
-    position: fixed;
-    top: 0;
-    left: -240px;
-    height: 100vh;
-    width: 220px;
-    flex-direction: column;
-    padding: 2rem;
-    background: white;
-    transition: left 0.3s ease;
-  }
-
-  .top-nav.open {
-    left: 0;
+  html {
+    scroll-padding-top: 280px; /* height of navbar on mobile */
   }
 }

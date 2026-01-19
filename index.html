@@ -10,77 +10,135 @@ EMAIL: peihanc@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Peihan Cui">
   <meta name="description" content="Portfolio Home Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   <!-- you would link to an external stylesheet here! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>Peihan Cui Portfolio</title>
 </head>
 <body>
-  <!-- STICKY TOP NAV -->
-    <nav class="top-nav">
-      <div class="logo">
-        <i class="fa-solid fa-user-tie"></i>
-        <span>Portfolio</span>
-      </div>
-      <a href="#home">
-        <i class="fa-solid fa-house"></i>
-        Home
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <i class="fa-solid fa-user-tie me-2"></i>
+        Portfolio
       </a>
-      <a href="#about">
-        <i class="fa-solid fa-address-card"></i>
-        About Me
-      </a>
-      <a href="#experiences">
-        <i class="fa-solid fa-lightbulb"></i>
-        Experiences
-      </a>
-      <a href="#projects">
-        <i class="fa-solid fa-laptop"></i>
-        Projects
-      </a>
-      <a href="#skills">
-        <i class="fa-solid fa-toolbox"></i>
-        Skills
-      </a>
-      <button class="menu-btn" aria-label="Toggle menu">
-        <i class="fa-solid fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </nav>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home"><i class="fa-solid fa-house me-1"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fa-solid fa-address-card me-1"></i>About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiences"><i class="fa-solid fa-lightbulb me-1"></i>Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"><i class="fa-solid fa-laptop me-1"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills"><i class="fa-solid fa-toolbox me-1"></i>Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <main class="title" id="home">
+  <header class="container text-center my-5" id="home">
     <h1>Hi there, I am Peihan Cui</h1>
-    <p>
-      I am a passionate Computer Scientist and Software Developer who has an interest in Intelligent 
+    <p class="lead">
+      I am a passionate Computer Scientist and Software Developer with an interest in Intelligent 
       Systems and Fullstack development. 
     </p>
-  </main>
+  </header>
 
-  <!-- CONTENT SECTIONS -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p></p>
+  <section id="about" class="container my-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>Add your description here.</p>
+      </div>
+      <div class="mb-3 mb-md-0">
+        <img src="images/HeadShot.jpg" alt="Professional headshot of Peihan Cui" class="headshot-img">
+      </div>
+    </div>
   </section>
 
-  <section id="experiences">
-    <h2>Experiences</h2>
-    <p></p>
+  <section id="experiences" class="container my-5">
+    <h2 class="mb-4">Experiences</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Experience 1</h5>
+            <p class="card-text">Details about this experience...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Experience 2</h5>
+            <p class="card-text">Details about this experience...</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p></p>
+  <section id="projects" class="container my-5">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Short description...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Short description...</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p></p>
+  <section id="skills" class="container my-5">
+    <h2 class="mb-4">Skills</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3 text-center">
+        <i class="fa-solid fa-code fa-2x"></i>
+        <p>Programming</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <i class="fa-solid fa-database fa-2x"></i>
+        <p>Databases</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <i class="fa-solid fa-server fa-2x"></i>
+        <p>Backend</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <i class="fa-solid fa-laptop-code fa-2x"></i>
+        <p>Fullstack</p>
+      </div>
+    </div>
   </section>
-  <!-- <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p> -->
-<script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
