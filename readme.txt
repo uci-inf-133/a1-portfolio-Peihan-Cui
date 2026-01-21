@@ -41,7 +41,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 Yes I did. I ignored the potential problems from the accessibility checker. Most of them were about the images I 
 had included or about the BootStrap class names. Namely how my alt text is written or how the bootstrap classes are
-too complicated, etc. I also have a few warning about the headings that my header is used for format text which it isn't.
+too complicated, etc. I also have a few warning about the headings that my header is used for formating text which it isn't.
 There's a lot of "might be"s and I think they're not accessibility concerns because often times the checker is wrong and sometimes
 there isn't a way to get around it like the complex BootStrap classes/format. 
 
@@ -52,7 +52,7 @@ Around 5 or 6.
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
 I've looked at how exactly to use BootStrap, with the help of the website and Generative AI.
-I asked the AI how to write a burger menu with BootStrap instead of just plain CSS. 
+I asked the AI how to write a burger menu with BootStrap instead of using plain CSS. 
 https://getbootstrap.com/docs/3.4/css/
 
 I have also asked Generative AI how to write certain CSS classes like how do I make this button
@@ -64,7 +64,7 @@ https://fontawesome.com/search?ic=free-collection
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
 I did not consult my classmates but I did read the Slack channels we have for some questions with A1. 
-I did show my portfolio to some friends to get feedback on the general asthetic of it. 
+I did show my portfolio to some friends to get feedback on the general aesthetic of it. 
 
 7. Is there anything special we need to know in order to run your code?
 
